@@ -14,8 +14,9 @@ GitHub Pages: https://acar32furkan-glitch.github.io/amaurot-yon-secim/
 2. **Netlify Drop** (alternatif): https://app.netlify.com/drop adresine klasörü sürükleyin.
 3. Kendi sunucunuz: klasörü statik kök olarak yayınlayın.
 
-`file://` ile yerelde açarken Gemini taslağındaki kontak sayfası kırpması çalışmaz
-(tarayıcı canvas güvenliği); o sayfa için yerel sunucu gerekir:
+Tüm fotoğraflar gerçek dosya olarak `gorseller/` altındadır; `file://` ile de görünür.
+Yalnız Gemini taslağı stil için internetten Tailwind/Google Fonts yükler. Yerel sunucu
+isteğe bağlıdır:
 
 ```
 python -m http.server 4600
