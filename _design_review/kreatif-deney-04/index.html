@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amaurot — Üç ana sayfa yönü</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="temel.css">
+<style>
+  .giris{padding-block:clamp(32px,7svh,72px) clamp(28px,6svh,56px)}
+  .giris h1{font-size:clamp(2rem,4vw,3rem);line-height:1.05;margin-top:10px;max-width:24ch}
+  .giris p{font-size:16px;color:var(--yardimci);margin-top:12px;max-width:60ch}
+  .secenekler{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:clamp(18px,2.4vw,30px);padding-bottom:clamp(40px,8svh,80px);
+  }
+  .secenek{
+    display:flex;flex-direction:column;gap:8px;
+    border-top:1px solid var(--murekkep);padding-top:14px;
+    text-decoration:none;min-height:100%;
+  }
+  .secenek .harf{font-family:var(--serif);font-size:34px;line-height:1}
+  .secenek .ad{font-family:var(--serif);font-size:22px;line-height:1.15}
+  .secenek .aciklama{font-size:14px;color:var(--yardimci);line-height:1.55}
+  .secenek .git{margin-top:auto;border-bottom:0;color:var(--bordo)}
+  .secenek:hover .ad{color:var(--bordo)}
+  @media (max-width:760px){
+    .secenekler{grid-template-columns:1fr;gap:22px}
+    .secenek .git{margin-top:6px}
+  }
+</style>
+</head>
+<body>
+<main>
+  <section class="giris">
+    <div class="kap">
+      <p class="etiket">Studio From Utopia</p>
+      <h1>Üç ana sayfa yönü</h1>
+      <p>Aynı ürünler, aynı metinler ve aynı marka çatısı; üç farklı sayfa kurgusu. Her sayfa kendi başına tamamlanmış bir ana sayfa olarak çalışır.</p>
+    </div>
+  </section>
+
+  <section aria-label="Yönler">
+    <div class="kap secenekler">
+      <a class="secenek" href="a-fotograf.html">
+        <span class="harf">A</span>
+        <span class="ad">Fotoğrafın taşıdığı açılış</span>
+        <span class="aciklama">Tek büyük ürün fotoğrafı, geniş krem boşluk, fotoğrafın altında bilgi satırı.</span>
+        <span class="git">Görüntüle →</span>
+      </a>
+      <a class="secenek" href="b-malzeme.html">
+        <span class="harf">B</span>
+        <span class="ad">Malzemeden ürüne</span>
+        <span class="aciklama">Geniş makro kare ile ürün yan yana; yarım ekranlık kaydırmada ürün koleksiyondaki yerine geçer.</span>
+        <span class="git">Görüntüle →</span>
+      </a>
+      <a class="secenek" href="c-studyo.html">
+        <span class="harf">C</span>
+        <span class="ad">Tasarım stüdyosunun sayfası</span>
+        <span class="aciklama">Asimetrik açılış, farklı yüksekliklerde marka cümlesi ve üretim karesi.</span>
+        <span class="git">Görüntüle →</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="alt">
+  <div class="kap altCizgi"><p>Amaurot · Studio From Utopia — karşılaştırma girişi</p></div>
+</footer>
+</body>
+</html>

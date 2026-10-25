@@ -1,0 +1,984 @@
+{
+ "tarih": "2026-10-24T17:30:46.332Z",
+ "olcum": {
+  "320": {
+   "ustH": 67,
+   "markaW": 145.9,
+   "amblemW": 34,
+   "markaAd": "22px",
+   "menuSapma": null,
+   "h1Font": "18px",
+   "h1Metin": "El işçiliğiyle deri ürünler.",
+   "gorsel": {
+    "x": 16,
+    "y": 85,
+    "vx": 16,
+    "vy": 85,
+    "w": 288,
+    "h": 216,
+    "alt": 301
+   },
+   "rozet": {
+    "x": 16,
+    "y": 311,
+    "vx": 16,
+    "vy": 311,
+    "w": 172.8,
+    "h": 44,
+    "alt": 355
+   },
+   "rozetH": 44,
+   "btn": {
+    "x": 16,
+    "y": 438.3,
+    "vx": 16,
+    "vy": 438.3,
+    "w": 193.2,
+    "h": 48,
+    "alt": 486.3
+   },
+   "btnH": 48,
+   "deri": {
+    "x": 16,
+    "y": 508.3,
+    "vx": 16,
+    "vy": 508.3,
+    "w": 138,
+    "h": 118,
+    "alt": 626.3
+   },
+   "yamac": {
+    "x": 166,
+    "y": 508.3,
+    "vx": 166,
+    "vy": 508.3,
+    "w": 138,
+    "h": 118,
+    "alt": 626.3
+   },
+   "sergiSonu": 650.3,
+   "kolBaslik": {
+    "x": 16,
+    "y": 698.3,
+    "vx": 16,
+    "vy": 698.3,
+    "w": 288,
+    "h": 30.8,
+    "alt": 729.1
+   },
+   "kIlkKart": {
+    "x": 16,
+    "y": 792.9,
+    "vx": 16,
+    "vy": 792.9,
+    "w": 288,
+    "h": 332.6,
+    "alt": 1125.5
+   },
+   "kGorsel": {
+    "x": 16,
+    "y": 792.9,
+    "vx": 16,
+    "vy": 792.9,
+    "w": 288,
+    "h": 216,
+    "alt": 1008.9
+   },
+   "ctaIlkEkranda": true,
+   "ctaAlt": 486.3,
+   "yatayTasma": 0,
+   "boy": 4660,
+   "eksikGorsel": [],
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sans600": true
+   },
+   "bosHedef": 0,
+   "kirikCapa": [],
+   "atolyeGorsel": {
+    "x": 16,
+    "y": 3300.7,
+    "vx": 16,
+    "vy": 3300.7,
+    "w": 288,
+    "h": 432.7,
+    "alt": 3733.4
+   },
+   "atolyeMetin": {
+    "x": 16,
+    "y": 3753.4,
+    "vx": 16,
+    "vy": 3753.4,
+    "w": 288,
+    "h": 181.6,
+    "alt": 3935
+   },
+   "malzemeGorsel": {
+    "x": 16,
+    "y": 2349.7,
+    "vx": 16,
+    "vy": 2349.7,
+    "w": 288,
+    "h": 360,
+    "alt": 2709.7
+   }
+  },
+  "360": {
+   "ustH": 67,
+   "markaW": 145.9,
+   "amblemW": 34,
+   "markaAd": "22px",
+   "menuSapma": null,
+   "h1Font": "18px",
+   "h1Metin": "El işçiliğiyle deri ürünler.",
+   "gorsel": {
+    "x": 16,
+    "y": 85,
+    "vx": 16,
+    "vy": 85,
+    "w": 328,
+    "h": 246,
+    "alt": 331
+   },
+   "rozet": {
+    "x": 16,
+    "y": 341,
+    "vx": 16,
+    "vy": 341,
+    "w": 172.8,
+    "h": 44,
+    "alt": 385
+   },
+   "rozetH": 44,
+   "btn": {
+    "x": 16,
+    "y": 468.3,
+    "vx": 16,
+    "vy": 468.3,
+    "w": 193.2,
+    "h": 48,
+    "alt": 516.3
+   },
+   "btnH": 48,
+   "deri": {
+    "x": 16,
+    "y": 538.3,
+    "vx": 16,
+    "vy": 538.3,
+    "w": 158,
+    "h": 118,
+    "alt": 656.3
+   },
+   "yamac": {
+    "x": 186,
+    "y": 538.3,
+    "vx": 186,
+    "vy": 538.3,
+    "w": 158,
+    "h": 118,
+    "alt": 656.3
+   },
+   "sergiSonu": 680.3,
+   "kolBaslik": {
+    "x": 16,
+    "y": 728.3,
+    "vx": 16,
+    "vy": 728.3,
+    "w": 328,
+    "h": 30.8,
+    "alt": 759.1
+   },
+   "kIlkKart": {
+    "x": 16,
+    "y": 822.9,
+    "vx": 16,
+    "vy": 822.9,
+    "w": 328,
+    "h": 362.6,
+    "alt": 1185.5
+   },
+   "kGorsel": {
+    "x": 16,
+    "y": 822.9,
+    "vx": 16,
+    "vy": 822.9,
+    "w": 328,
+    "h": 246,
+    "alt": 1068.9
+   },
+   "ctaIlkEkranda": true,
+   "ctaAlt": 516.3,
+   "yatayTasma": 0,
+   "boy": 4900,
+   "eksikGorsel": [],
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sans600": true
+   },
+   "bosHedef": 0,
+   "kirikCapa": [],
+   "atolyeGorsel": {
+    "x": 35,
+    "y": 3537.3,
+    "vx": 35,
+    "vy": 3537.3,
+    "w": 290,
+    "h": 435.7,
+    "alt": 3973.1
+   },
+   "atolyeMetin": {
+    "x": 16,
+    "y": 3993.1,
+    "vx": 16,
+    "vy": 3993.1,
+    "w": 328,
+    "h": 181.6,
+    "alt": 4174.7
+   },
+   "malzemeGorsel": {
+    "x": 16,
+    "y": 2509.7,
+    "vx": 16,
+    "vy": 2509.7,
+    "w": 328,
+    "h": 410,
+    "alt": 2919.7
+   }
+  },
+  "390": {
+   "ustH": 67,
+   "markaW": 145.9,
+   "amblemW": 34,
+   "markaAd": "22px",
+   "menuSapma": null,
+   "h1Font": "19px",
+   "h1Metin": "El işçiliğiyle deri ürünler.",
+   "gorsel": {
+    "x": 20,
+    "y": 85,
+    "vx": 20,
+    "vy": 85,
+    "w": 350,
+    "h": 262.5,
+    "alt": 347.5
+   },
+   "rozet": {
+    "x": 20,
+    "y": 357.5,
+    "vx": 20,
+    "vy": 357.5,
+    "w": 172.8,
+    "h": 44,
+    "alt": 401.5
+   },
+   "rozetH": 44,
+   "btn": {
+    "x": 20,
+    "y": 486.2,
+    "vx": 20,
+    "vy": 486.2,
+    "w": 193.2,
+    "h": 48,
+    "alt": 534.2
+   },
+   "btnH": 48,
+   "deri": {
+    "x": 20,
+    "y": 556.2,
+    "vx": 20,
+    "vy": 556.2,
+    "w": 169,
+    "h": 118,
+    "alt": 674.2
+   },
+   "yamac": {
+    "x": 201,
+    "y": 556.2,
+    "vx": 201,
+    "vy": 556.2,
+    "w": 169,
+    "h": 118,
+    "alt": 674.2
+   },
+   "sergiSonu": 698.2,
+   "kolBaslik": {
+    "x": 20,
+    "y": 746.2,
+    "vx": 20,
+    "vy": 746.2,
+    "w": 350,
+    "h": 30.8,
+    "alt": 777
+   },
+   "kIlkKart": {
+    "x": 20,
+    "y": 840.8,
+    "vx": 20,
+    "vy": 840.8,
+    "w": 350,
+    "h": 379.1,
+    "alt": 1219.9
+   },
+   "kGorsel": {
+    "x": 20,
+    "y": 840.8,
+    "vx": 20,
+    "vy": 840.8,
+    "w": 350,
+    "h": 262.5,
+    "alt": 1103.3
+   },
+   "ctaIlkEkranda": true,
+   "ctaAlt": 534.2,
+   "yatayTasma": 0,
+   "boy": 5007,
+   "eksikGorsel": [],
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sans600": true
+   },
+   "bosHedef": 0,
+   "kirikCapa": [],
+   "atolyeGorsel": {
+    "x": 50,
+    "y": 3671.5,
+    "vx": 50,
+    "vy": 3671.5,
+    "w": 290,
+    "h": 435.7,
+    "alt": 4107.2
+   },
+   "atolyeMetin": {
+    "x": 20,
+    "y": 4127.2,
+    "vx": 20,
+    "vy": 4127.2,
+    "w": 350,
+    "h": 154.5,
+    "alt": 4281.7
+   },
+   "malzemeGorsel": {
+    "x": 20,
+    "y": 2600.9,
+    "vx": 20,
+    "vy": 2600.9,
+    "w": 350,
+    "h": 437.5,
+    "alt": 3038.4
+   }
+  },
+  "768": {
+   "ustH": 67,
+   "markaW": 145.9,
+   "amblemW": 34,
+   "markaAd": "22px",
+   "menuSapma": null,
+   "h1Font": "19px",
+   "h1Metin": "El işçiliğiyle deri ürünler.",
+   "gorsel": {
+    "x": 104,
+    "y": 85,
+    "vx": 104,
+    "vy": 85,
+    "w": 560,
+    "h": 420,
+    "alt": 505
+   },
+   "rozet": {
+    "x": 104,
+    "y": 515,
+    "vx": 104,
+    "vy": 515,
+    "w": 172.8,
+    "h": 44,
+    "alt": 559
+   },
+   "rozetH": 44,
+   "btn": {
+    "x": 104,
+    "y": 643.7,
+    "vx": 104,
+    "vy": 643.7,
+    "w": 193.2,
+    "h": 48,
+    "alt": 691.7
+   },
+   "btnH": 48,
+   "deri": {
+    "x": 104,
+    "y": 713.7,
+    "vx": 104,
+    "vy": 713.7,
+    "w": 274,
+    "h": 118,
+    "alt": 831.7
+   },
+   "yamac": {
+    "x": 390,
+    "y": 713.7,
+    "vx": 390,
+    "vy": 713.7,
+    "w": 274,
+    "h": 118,
+    "alt": 831.7
+   },
+   "sergiSonu": 855.7,
+   "kolBaslik": {
+    "x": 20,
+    "y": 903.7,
+    "vx": 20,
+    "vy": 903.7,
+    "w": 728,
+    "h": 37,
+    "alt": 940.7
+   },
+   "kIlkKart": {
+    "x": 20,
+    "y": 1004.5,
+    "vx": 20,
+    "vy": 1004.5,
+    "w": 728,
+    "h": 662.6,
+    "alt": 1667.1
+   },
+   "kGorsel": {
+    "x": 20,
+    "y": 1004.5,
+    "vx": 20,
+    "vy": 1004.5,
+    "w": 728,
+    "h": 546,
+    "alt": 1550.5
+   },
+   "ctaIlkEkranda": true,
+   "ctaAlt": 691.7,
+   "yatayTasma": 0,
+   "boy": 6580,
+   "eksikGorsel": [],
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sans600": true
+   },
+   "bosHedef": 0,
+   "kirikCapa": [],
+   "atolyeGorsel": {
+    "x": 239,
+    "y": 5266.8,
+    "vx": 239,
+    "vy": 5266.8,
+    "w": 290,
+    "h": 435.7,
+    "alt": 5702.5
+   },
+   "atolyeMetin": {
+    "x": 20,
+    "y": 5722.5,
+    "vx": 20,
+    "vy": 5722.5,
+    "w": 728,
+    "h": 132.5,
+    "alt": 5855.1
+   },
+   "malzemeGorsel": {
+    "x": 20,
+    "y": 3971.9,
+    "vx": 20,
+    "vy": 3971.9,
+    "w": 728,
+    "h": 485.3,
+    "alt": 4457.2
+   }
+  },
+  "1280": {
+   "ustH": 81,
+   "markaW": 172.8,
+   "amblemW": 40,
+   "markaAd": "26px",
+   "menuSapma": 0,
+   "h1Font": "19px",
+   "h1Metin": "El işçiliğiyle deri ürünler.",
+   "gorsel": {
+    "x": 382.1,
+    "y": 129,
+    "vx": 382.1,
+    "vy": 129,
+    "w": 515.8,
+    "h": 386.9,
+    "alt": 515.9
+   },
+   "rozet": {
+    "x": 398.1,
+    "y": 455.9,
+    "vx": 398.1,
+    "vy": 455.9,
+    "w": 167.3,
+    "h": 44,
+    "alt": 499.9
+   },
+   "rozetH": 44,
+   "btn": {
+    "x": 48,
+    "y": 606.6,
+    "vx": 48,
+    "vy": 606.6,
+    "w": 193.2,
+    "h": 48,
+    "alt": 654.6
+   },
+   "btnH": 48,
+   "deri": {
+    "x": 141.1,
+    "y": 105,
+    "vx": 141.1,
+    "vy": 105,
+    "w": 185,
+    "h": 250,
+    "alt": 355
+   },
+   "yamac": {
+    "x": 953.9,
+    "y": 161,
+    "vx": 953.9,
+    "vy": 161,
+    "w": 195,
+    "h": 260,
+    "alt": 421
+   },
+   "sergiSonu": 678.6,
+   "kolBaslik": {
+    "x": 48,
+    "y": 734.6,
+    "vx": 48,
+    "vy": 734.6,
+    "w": 310.1,
+    "h": 32.5,
+    "alt": 767.1
+   },
+   "kIlkKart": {
+    "x": 382.1,
+    "y": 844.5,
+    "vx": 382.1,
+    "vy": 844.5,
+    "w": 515.8,
+    "h": 507.4,
+    "alt": 1351.9
+   },
+   "kGorsel": {
+    "x": 382.1,
+    "y": 844.5,
+    "vx": 382.1,
+    "vy": 844.5,
+    "w": 515.8,
+    "h": 386.9,
+    "alt": 1231.4
+   },
+   "ctaIlkEkranda": true,
+   "ctaAlt": 654.6,
+   "yatayTasma": 0,
+   "boy": 3885,
+   "eksikGorsel": [],
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sans600": true
+   },
+   "bosHedef": 0,
+   "kirikCapa": [],
+   "atolyeGorsel": {
+    "x": 196.6,
+    "y": 2870.4,
+    "vx": 196.6,
+    "vy": 2870.4,
+    "w": 370,
+    "h": 555.9,
+    "alt": 3426.3
+   },
+   "atolyeMetin": {
+    "x": 643.4,
+    "y": 3067.7,
+    "vx": 643.4,
+    "vy": 3067.7,
+    "w": 440,
+    "h": 161.3,
+    "alt": 3229
+   },
+   "malzemeGorsel": {
+    "x": 48,
+    "y": 1682.7,
+    "vx": 48,
+    "vy": 1682.7,
+    "w": 690.7,
+    "h": 420,
+    "alt": 2102.7
+   }
+  },
+  "1440": {
+   "ustH": 81,
+   "markaW": 172.8,
+   "amblemW": 40,
+   "markaAd": "26px",
+   "menuSapma": 0,
+   "h1Font": "19px",
+   "h1Metin": "El işçiliğiyle deri ürünler.",
+   "gorsel": {
+    "x": 429.8,
+    "y": 129,
+    "vx": 429.8,
+    "vy": 129,
+    "w": 580.3,
+    "h": 435.2,
+    "alt": 564.2
+   },
+   "rozet": {
+    "x": 445.8,
+    "y": 504.2,
+    "vx": 445.8,
+    "vy": 504.2,
+    "w": 167.3,
+    "h": 44,
+    "alt": 548.2
+   },
+   "rozetH": 44,
+   "btn": {
+    "x": 48,
+    "y": 655,
+    "vx": 48,
+    "vy": 655,
+    "w": 193.2,
+    "h": 48,
+    "alt": 703
+   },
+   "btnH": 48,
+   "deri": {
+    "x": 188.8,
+    "y": 105,
+    "vx": 188.8,
+    "vy": 105,
+    "w": 185,
+    "h": 250,
+    "alt": 355
+   },
+   "yamac": {
+    "x": 1066.2,
+    "y": 161,
+    "vx": 1066.2,
+    "vy": 161,
+    "w": 195,
+    "h": 260,
+    "alt": 421
+   },
+   "sergiSonu": 727,
+   "kolBaslik": {
+    "x": 48,
+    "y": 783,
+    "vx": 48,
+    "vy": 783,
+    "w": 357.8,
+    "h": 36.6,
+    "alt": 819.6
+   },
+   "kIlkKart": {
+    "x": 429.8,
+    "y": 897,
+    "vx": 429.8,
+    "vy": 897,
+    "w": 580.3,
+    "h": 557.7,
+    "alt": 1454.7
+   },
+   "kGorsel": {
+    "x": 429.8,
+    "y": 897,
+    "vx": 429.8,
+    "vy": 897,
+    "w": 580.3,
+    "h": 435.2,
+    "alt": 1332.2
+   },
+   "ctaIlkEkranda": true,
+   "ctaAlt": 703,
+   "yatayTasma": 0,
+   "boy": 4226,
+   "eksikGorsel": [],
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sans600": true
+   },
+   "bosHedef": 0,
+   "kirikCapa": [],
+   "atolyeGorsel": {
+    "x": 271.8,
+    "y": 3191.9,
+    "vx": 271.8,
+    "vy": 3191.9,
+    "w": 370,
+    "h": 555.9,
+    "alt": 3747.9
+   },
+   "atolyeMetin": {
+    "x": 728.2,
+    "y": 3388.5,
+    "vx": 728.2,
+    "vy": 3388.5,
+    "w": 440,
+    "h": 162.7,
+    "alt": 3551.3
+   },
+   "malzemeGorsel": {
+    "x": 48,
+    "y": 1792.5,
+    "vx": 48,
+    "vy": 1792.5,
+    "w": 784,
+    "h": 513,
+    "alt": 2305.5
+   }
+  }
+ },
+ "gecis": {
+  "390": {
+   "g0": {
+    "scrollY": 0,
+    "ucus": false,
+    "kaynakYok": false,
+    "kaynakOp": "1",
+    "hedefOp": "1",
+    "klon": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    },
+    "klonGorunur": false,
+    "h1Kesisim": false,
+    "btnKesisim": false,
+    "baslikKesisim": false,
+    "h1Duzey": "auto/4",
+    "h1Gorunur": "visible:1"
+   },
+   "g25": {
+    "scrollY": 60,
+    "ucus": true,
+    "kaynakYok": true,
+    "kaynakOp": "0",
+    "hedefOp": "0",
+    "klon": {
+     "x": 20,
+     "y": 143.1,
+     "w": 350,
+     "h": 262.5
+    },
+    "klonGorunur": true,
+    "h1Kesisim": true,
+    "btnKesisim": false,
+    "baslikKesisim": false,
+    "h1Duzey": "auto/4",
+    "h1Gorunur": "visible:1"
+   },
+   "g50": {
+    "scrollY": 120,
+    "ucus": true,
+    "kaynakYok": true,
+    "kaynakOp": "0",
+    "hedefOp": "0",
+    "klon": {
+     "x": 20,
+     "y": 342.9,
+     "w": 350,
+     "h": 262.5
+    },
+    "klonGorunur": true,
+    "h1Kesisim": true,
+    "btnKesisim": true,
+    "baslikKesisim": false,
+    "h1Duzey": "auto/4",
+    "h1Gorunur": "visible:1"
+   },
+   "g75": {
+    "scrollY": 180,
+    "ucus": true,
+    "kaynakYok": true,
+    "kaynakOp": "0",
+    "hedefOp": "0",
+    "klon": {
+     "x": 20,
+     "y": 542.7,
+     "w": 350,
+     "h": 262.5
+    },
+    "klonGorunur": true,
+    "h1Kesisim": false,
+    "btnKesisim": false,
+    "baslikKesisim": true,
+    "h1Duzey": "auto/4",
+    "h1Gorunur": "visible:1"
+   },
+   "g100": {
+    "scrollY": 240,
+    "ucus": false,
+    "kaynakYok": true,
+    "kaynakOp": "0",
+    "hedefOp": "1",
+    "klon": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    },
+    "klonGorunur": false,
+    "h1Kesisim": false,
+    "btnKesisim": false,
+    "baslikKesisim": false,
+    "h1Duzey": "auto/4",
+    "h1Gorunur": "visible:1"
+   }
+  },
+  "1440": {
+   "g0": {
+    "scrollY": 0,
+    "ucus": false,
+    "kaynakYok": false,
+    "kaynakOp": "1",
+    "hedefOp": "1",
+    "klon": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    },
+    "klonGorunur": false,
+    "h1Kesisim": false,
+    "btnKesisim": false,
+    "baslikKesisim": false,
+    "h1Duzey": "auto/4",
+    "h1Gorunur": "visible:1"
+   },
+   "g50": {
+    "scrollY": 210,
+    "ucus": true,
+    "kaynakYok": true,
+    "kaynakOp": "0",
+    "hedefOp": "0",
+    "klon": {
+     "x": 429.8,
+     "y": 303,
+     "w": 580.3,
+     "h": 435.2
+    },
+    "klonGorunur": true,
+    "h1Kesisim": false,
+    "btnKesisim": false,
+    "baslikKesisim": false,
+    "h1Duzey": "auto/4",
+    "h1Gorunur": "visible:1"
+   },
+   "g100": {
+    "scrollY": 420,
+    "ucus": false,
+    "kaynakYok": true,
+    "kaynakOp": "0",
+    "hedefOp": "1",
+    "klon": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    },
+    "klonGorunur": false,
+    "h1Kesisim": false,
+    "btnKesisim": false,
+    "baslikKesisim": false,
+    "h1Duzey": "auto/4",
+    "h1Gorunur": "visible:1"
+   }
+  }
+ },
+ "mobil": {
+  "menu": {
+   "oncekiKaydirma": 300,
+   "menuAcik": {
+    "gizli": false,
+    "odak": "Koleksiyon",
+    "genislik": 390
+   },
+   "menuKapali": {
+    "gizli": true,
+    "odak": "menuDugme",
+    "kaydirma": 300
+   }
+  },
+  "anchor": {
+   "hash": "#koleksiyon",
+   "baslikUst": 126,
+   "ustAlt": 67,
+   "gizliKaldi": false
+  },
+  "diyalogRozet": {
+   "open": true,
+   "ad": "Seamless Pack",
+   "odak": "dKapat"
+  },
+  "diyalogKapali": {
+   "open": false,
+   "odak": "rozet:Seamless Pack · İncele"
+  },
+  "deri": {
+   "deriKapali": {
+    "open": false,
+    "yukseklik": 49,
+    "dokunma": 48
+   },
+   "deriAcik": {
+    "open": true,
+    "odak": "SUMMARY:Derileri tanıyın",
+    "secenekler": [
+     "Pull-up bordo",
+     "Pull-up camel",
+     "Pull-up taba",
+     "Crazy taba",
+     "Crazy camel"
+    ],
+    "gorselY": 243
+   }
+  }
+ },
+ "masaustu": {
+  "hizalama": {
+   "heroMerkez": 720,
+   "hedefMerkez": 720,
+   "heroW": 580,
+   "hedefW": 580
+  },
+  "rozet": {
+   "opaklik": "1",
+   "yukseklik": 44,
+   "genislik": 167,
+   "odaklanabilir": true,
+   "tabStop": true
+  }
+ },
+ "diger": {
+  "azHareket": {
+   "ucus": false,
+   "klon": false,
+   "kaynakOp": "1",
+   "hedefOp": "1",
+   "h1": "visible"
+  },
+  "jsKapali": {
+   "metinVar": true,
+   "gorunenGorsel": 11,
+   "yuklenmeyen": 0,
+   "kaynakOp": "1",
+   "hedefOp": "1",
+   "klon": false,
+   "boy": 5007
+  }
+ },
+ "konsol": []
+}

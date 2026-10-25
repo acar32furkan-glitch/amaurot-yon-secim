@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amaurot — ana sayfa yönleri</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--krem:#f5f2ec;--muk:#242321;--bordo:#642d38;--cizgi:#ddd6cc;--yard:#625c56}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--krem);color:var(--muk);font-family:'Source Sans 3',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding:36px 24px 90px}
+.ust{border-bottom:1px solid var(--cizgi);padding-bottom:18px;margin-bottom:26px}
+h1{font-size:30px;line-height:1.2;margin:0 0 8px;font-weight:600}
+.alt{color:var(--yard);margin:0;max-width:74ch;font-size:15px}
+.not{margin-top:14px;padding:12px 14px;background:#efe9e0;border-left:2px solid var(--bordo);font-size:13.5px;color:#3b3733}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.kart{background:#fff;border:1px solid var(--cizgi);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.kart.secili{border-color:var(--bordo);box-shadow:0 0 0 2px var(--bordo) inset}
+.kart-ust{padding:14px 16px 12px;border-bottom:1px solid var(--cizgi);display:flex;gap:12px;align-items:baseline}
+.no{font-size:12px;letter-spacing:.08em;color:var(--yard);font-variant-numeric:tabular-nums}
+.ad{font-size:17px;font-weight:600}
+.mini{margin-left:auto;font-size:12px;color:var(--yard)}
+.onizleme{position:relative;overflow:hidden;background:#eee7dc;height:378px}
+@media(max-width:1100px){.onizleme{height:300px}}
+@media(max-width:760px){.onizleme{height:210px}}
+.onizleme iframe{position:absolute;top:0;left:0;width:1440px;height:900px;border:0;transform-origin:top left}
+.onizleme.small iframe{transform:scale(0.42)}
+.kart-alt{padding:12px 16px 14px;display:flex;flex-direction:column;gap:10px}
+.aciklama{font-size:13.5px;color:#3f3b37;margin:0}
+.eylem{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.dugme{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 13px;border:1px solid #8a8178;border-radius:3px;background:#fff;font:inherit;font-size:13px;font-weight:600;cursor:pointer;text-decoration:none}
+.dugme:hover{border-color:var(--bordo);color:var(--bordo)}
+.dugme.sec{background:var(--bordo);border-color:var(--bordo);color:#fff}
+.dugme.sec[aria-pressed="false"]{background:#fff;color:var(--muk);border-color:#8a8178}
+.dugme.sec[aria-pressed="false"]:hover{border-color:var(--bordo);color:var(--bordo)}
+.son{margin-top:34px;border-top:1px solid var(--cizgi);padding-top:20px;display:grid;gap:12px}
+textarea{width:100%;min-height:96px;padding:10px 12px;border:1px solid #8a8178;border-radius:3px;font:inherit;font-size:14px;background:#fff}
+.durum{font-size:13px;color:var(--yard)}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="ust">
+    <h1>Amaurot — ana sayfa yönleri</h1>
+    <p class="alt">Aşağıdaki altı yön, aynı ürünleri ve aynı marka metinlerini farklı düzenlerle gösteriyor.
+      Beğendiğiniz yönü işaretleyin; isterseniz not bırakın. Seçiminizi dosya olarak indirebilir
+      veya WhatsApp/e-posta ile iletebilirsiniz.</p>
+    <p class="not"><strong>Nasıl bakılır:</strong> Her kutu sayfanın canlı hâlidir; küçük görünüyorsa
+      <em>Tam ekran aç</em> ile gerçek boyutunda açılır. Bu sayfalar tasarım önizlemesidir: sepet,
+      ödeme ve gerçek sipariş yoktur.</p>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="son">
+    <label for="notlar" style="font-weight:600;font-size:14px">Eklemek istediğiniz not</label>
+    <textarea id="notlar" placeholder="Örn: 02 numaralı yönün açılışını beğendim, ama koleksiyon düzeni 04 gibi olsun."></textarea>
+    <div class="eylem">
+      <button class="dugme" id="indir">Seçimlerimi indir</button>
+      <button class="dugme" id="kopyala">Panoya kopyala</button>
+      <span class="durum" id="durum" role="status"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var YONLER = [
+      {
+            "kod": "b-malzeme",
+            "no": "01",
+            "ad": "Malzemeden ürüne",
+            "not": "Açılışta makro doku ile ürün yan yana; kaydırınca çanta koleksiyondaki yerine geçiyor. Hareketli, masaüstüne özgü.",
+            "yol": "_design_review/kreatif-deney-04/b-malzeme.html"
+      },
+      {
+            "kod": "c-studyo",
+            "no": "02",
+            "ad": "Tasarım stüdyosunun sayfası",
+            "not": "Asimetrik açılış: ürün, metin ve küçük üretim karesi farklı yüksekliklerde. Sakin, tek küçük reveal.",
+            "yol": "_design_review/kreatif-deney-04/c-studyo.html"
+      },
+      {
+            "kod": "03d",
+            "no": "03",
+            "ad": "Koleksiyona geçiş (03D)",
+            "not": "Açılıştan koleksiyona yumuşak geçiş; mobilde sadeleşen hareket. Teslim edilen son hareket kararı.",
+            "yol": "_design_review/kreatif-deney-03d/index.html"
+      },
+      {
+            "kod": "03e",
+            "no": "04",
+            "ad": "Yol · Arazi · Ufuk (03E)",
+            "not": "Çanta ilk kez tek karede; hikâye üç kareyle açılıyor. Daha atmosferik, daha az hareket.",
+            "yol": "_design_review/kreatif-deney-03e/index.html"
+      },
+      {
+            "kod": "navbar",
+            "no": "05",
+            "ad": "Navbar kararı",
+            "not": "Üst çubuk ve koleksiyon bölümü karşılaştırması; menü yerleşimi ve logo hizası burada denenmişti.",
+            "yol": "_design_review/navbar-karari/index.html#koleksiyon"
+      },
+      {
+            "kod": "gemini",
+            "no": "06",
+            "ad": "Katalog vitrini (Gemini taslağı)",
+            "not": "16 ürün, beş deri seçeneği, perakende/toptan fiyat anahtarı ve sipariş listesi. Fotoğraflar arşiv kontak sayfalarından kırpılır; sayfa internet ister.",
+            "yol": "_design_review/gemini-anasayfa/index.html"
+      }
+];
+  var secim = null;
+  var grid = document.getElementById("grid");
+  var durum = document.getElementById("durum");
+
+  function olcekAyarla(kutu){
+    var iframe = kutu.querySelector("iframe");
+    if(!iframe) return;
+    var s = kutu.clientWidth / 1440;
+    iframe.style.transform = "scale(" + s + ")";
+  }
+
+  YONLER.forEach(function(y){
+    var kart = document.createElement("article");
+    kart.className = "kart";
+    kart.setAttribute("data-kod", y.kod);
+    kart.innerHTML =
+      '<div class="kart-ust"><span class="no">' + y.no + '</span>' +
+      '<span class="ad">' + y.ad + '</span></div>' +
+      '<div class="onizleme"><iframe loading="lazy" title="' + y.ad + ' önizlemesi" src="' + y.yol + '"></iframe></div>' +
+      '<div class="kart-alt"><p class="aciklama">' + y.not + '</p>' +
+      '<div class="eylem">' +
+      '<button class="dugme sec" type="button" aria-pressed="false" data-sec="' + y.kod + '">Bu yönü seç</button>' +
+      '<a class="dugme" href="' + y.yol + '" target="_blank" rel="noopener">Tam ekran aç</a>' +
+      '</div></div>';
+    grid.appendChild(kart);
+    olcekAyarla(kart.querySelector(".onizleme"));
+  });
+
+  grid.addEventListener("click", function(e){
+    var b = e.target.closest("[data-sec]");
+    if(!b) return;
+    var kod = b.getAttribute("data-sec");
+    secim = (secim === kod) ? null : kod;
+    document.querySelectorAll(".kart").forEach(function(k){
+      var secili = k.getAttribute("data-kod") === secim;
+      k.classList.toggle("secili", secili);
+      var d = k.querySelector("[data-sec]");
+      d.setAttribute("aria-pressed", secili ? "true" : "false");
+      d.textContent = secili ? "Seçildi ✓" : "Bu yönü seç";
+    });
+    try { localStorage.setItem("amaurot-secim", JSON.stringify({secim: secim, not: document.getElementById("notlar").value})); } catch(err){}
+    durum.textContent = secim ? ("Seçim: " + secim) : "Seçim kaldırıldı.";
+  });
+
+  function veri(){
+    return {
+      tarih: new Date().toISOString(),
+      sayfa: "amaurot-ana-sayfa-yonleri",
+      secim: secim,
+      not: document.getElementById("notlar").value
+    };
+  }
+
+  document.getElementById("indir").addEventListener("click", function(){
+    var blob = new Blob([JSON.stringify(veri(), null, 2)], {type:"application/json"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "amaurot-yon-secimi.json";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+    durum.textContent = "Seçim dosyası indirildi.";
+  });
+
+  document.getElementById("kopyala").addEventListener("click", function(){
+    var v = veri();
+    var metin = "Amaurot yön seçimi: " + (v.secim || "seçim yok") + (v.not ? "\nNot: " + v.not : "");
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(metin).then(function(){ durum.textContent = "Panoya kopyalandı."; },
+        function(){ durum.textContent = "Kopyalanamadı; dosyayı indirin."; });
+    } else {
+      durum.textContent = "Tarayıcı panoya kopyalamıyor; dosyayı indirin.";
+    }
+  });
+
+  window.addEventListener("resize", function(){
+    document.querySelectorAll(".onizleme").forEach(olcekAyarla);
+  });
+
+  try {
+    var kayit = JSON.parse(localStorage.getItem("amaurot-secim") || "null");
+    if(kayit){
+      if(kayit.not) document.getElementById("notlar").value = kayit.not;
+      if(kayit.secim){
+        var b = document.querySelector('[data-sec="' + kayit.secim + '"]');
+        if(b) b.click();
+      }
+    }
+  } catch(err){}
+})();
+</script>
+</body>
+</html>

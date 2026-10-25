@@ -1,0 +1,256 @@
+{
+ "a-fotograf": {
+  "390": {
+   "cta": true,
+   "tason": 0,
+   "boy": 4829,
+   "menu": 0
+  },
+  "1280": {
+   "cta": true,
+   "tason": 0,
+   "boy": 3449
+  },
+  "1440": {
+   "ustH": 81,
+   "markaW": 172.8,
+   "menuSapma": 0,
+   "h1Font": "34px",
+   "h1TextW": 420.1,
+   "cta": true,
+   "tason": 0,
+   "boy": 3996,
+   "eksikGorsel": 0,
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sansUstAgirlik": true
+   }
+  },
+  "diyalog": {
+   "acik": {
+    "open": true,
+    "ad": "Seamless Pack",
+    "gorsel": "gorseller/seamless-pack.jpg",
+    "odak": "dKapat"
+   },
+   "kapali": {
+    "open": false,
+    "odak": "BUTTON:Ürünü incele"
+   }
+  },
+  "mobilMenu": {
+   "acik": {
+    "gizli": false,
+    "genislik": 390,
+    "odak": "Koleksiyon"
+   },
+   "kapali": {
+    "gizli": true,
+    "odak": "menuDugme",
+    "genislik": 0
+   }
+  },
+  "azHareket": {
+   "ucan": "yok",
+   "revealOpaklik": []
+  },
+  "jsKapali": {
+   "metinVar": true,
+   "gorunenGorsel": 9,
+   "yuklenmeyen": 0,
+   "sayfaYuksekligi": 4829
+  },
+  "hatalar": {
+   "konsol": [],
+   "istekHatasi": []
+  }
+ },
+ "b-malzeme": {
+  "390": {
+   "cta": true,
+   "tason": 0,
+   "boy": 4040,
+   "menu": 0
+  },
+  "1280": {
+   "cta": true,
+   "tason": 0,
+   "boy": 2936
+  },
+  "1440": {
+   "ustH": 81,
+   "markaW": 172.8,
+   "menuSapma": 0,
+   "h1Font": "59.04px",
+   "h1TextW": 253.5,
+   "cta": true,
+   "tason": 0,
+   "boy": 3506,
+   "eksikGorsel": 0,
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sansUstAgirlik": true
+   }
+  },
+  "diyalog": {
+   "acik": {
+    "open": true,
+    "ad": "Butterfly Flip",
+    "gorsel": "gorseller/butterfly-flip.jpg",
+    "odak": "dKapat"
+   },
+   "kapali": {
+    "open": false,
+    "odak": "BUTTON:Ürünü incele"
+   }
+  },
+  "mobilMenu": {
+   "acik": {
+    "gizli": false,
+    "genislik": 390,
+    "odak": "Koleksiyon"
+   },
+   "kapali": {
+    "gizli": true,
+    "odak": "menuDugme",
+    "genislik": 0
+   }
+  },
+  "bGecis": {
+   "ekranlar": {
+    "p50": {
+     "p": "0.5000",
+     "ucanGorunur": true,
+     "ucanKutu": {
+      "x": 897.9,
+      "y": 350.2,
+      "w": 494.1,
+      "h": 370.6
+     },
+     "urunOpaklik": "0",
+     "hedefGorselOpaklik": "0",
+     "hedefTamam": false,
+     "baslikKesisim": false,
+     "baslikKutu": {
+      "x": 48,
+      "y": 509.4,
+      "w": 371.8,
+      "h": 109.9
+     }
+    },
+    "p85": {
+     "p": "0.8511",
+     "ucanGorunur": true,
+     "ucanKutu": {
+      "x": 857.3,
+      "y": 495.8,
+      "w": 534.7,
+      "h": 401
+     },
+     "urunOpaklik": "0",
+     "hedefGorselOpaklik": "0",
+     "hedefTamam": false,
+     "baslikKesisim": false,
+     "baslikKutu": {
+      "x": 48,
+      "y": 351.4,
+      "w": 371.8,
+      "h": 109.9
+     }
+    }
+   },
+   "capa": {
+    "hash": "#koleksiyon",
+    "scrollY": 680,
+    "hedefGorselOpaklik": "1",
+    "hedefGorunur": true,
+    "ucanVar": false
+   }
+  },
+  "azHareket": {
+   "ucan": "yok",
+   "revealOpaklik": []
+  },
+  "jsKapali": {
+   "metinVar": true,
+   "gorunenGorsel": 10,
+   "yuklenmeyen": 0,
+   "sayfaYuksekligi": 4040
+  },
+  "hatalar": {
+   "konsol": [],
+   "istekHatasi": []
+  }
+ },
+ "c-studyo": {
+  "390": {
+   "cta": true,
+   "tason": 0,
+   "boy": 4819,
+   "menu": 0
+  },
+  "1280": {
+   "cta": true,
+   "tason": 0,
+   "boy": 3671
+  },
+  "1440": {
+   "ustH": 81,
+   "markaW": 172.8,
+   "menuSapma": 0,
+   "h1Font": "48.96px",
+   "h1TextW": 280.5,
+   "cta": true,
+   "tason": 0,
+   "boy": 4217,
+   "eksikGorsel": 0,
+   "fontlar": {
+    "ltc": true,
+    "sans": true,
+    "sansUstAgirlik": true
+   }
+  },
+  "diyalog": {
+   "acik": {
+    "open": true,
+    "ad": "Butterfly Flip",
+    "gorsel": "gorseller/butterfly-flip.jpg",
+    "odak": "dKapat"
+   },
+   "kapali": {
+    "open": false,
+    "odak": "BUTTON:Ürünü incele"
+   }
+  },
+  "mobilMenu": {
+   "acik": {
+    "gizli": false,
+    "genislik": 390,
+    "odak": "Koleksiyon"
+   },
+   "kapali": {
+    "gizli": true,
+    "odak": "menuDugme",
+    "genislik": 0
+   }
+  },
+  "azHareket": {
+   "ucan": "yok",
+   "revealOpaklik": [
+    "1"
+   ]
+  },
+  "jsKapali": {
+   "metinVar": true,
+   "gorunenGorsel": 9,
+   "yuklenmeyen": 0,
+   "sayfaYuksekligi": 4819
+  },
+  "hatalar": {
+   "konsol": [],
+   "istekHatasi": []
+  }
+ }
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "w": 390,
+    "overflow": false,
+    "bagCount": 1,
+    "missing": 0,
+    "cta": 545.890625,
+    "missingAfterLoad": 0,
+    "dialog": true,
+    "focus": true,
+    "anchor": 95.890625,
+    "errors": []
+  },
+  {
+    "w": 320,
+    "overflow": false,
+    "bagCount": 1,
+    "missing": 0,
+    "cta": 498.9375,
+    "missingAfterLoad": 0,
+    "dialog": true,
+    "focus": true,
+    "anchor": 95.9375,
+    "errors": []
+  },
+  {
+    "w": 768,
+    "overflow": false,
+    "bagCount": 1,
+    "missing": 0,
+    "cta": 740.890625,
+    "missingAfterLoad": 0,
+    "dialog": true,
+    "focus": true,
+    "anchor": 95.890625,
+    "errors": []
+  },
+  {
+    "w": 1280,
+    "overflow": false,
+    "bagCount": 1,
+    "missing": 0,
+    "cta": 688.59375,
+    "missingAfterLoad": 0,
+    "dialog": true,
+    "focus": true,
+    "anchor": 95.59375,
+    "errors": []
+  },
+  {
+    "w": 1440,
+    "overflow": false,
+    "bagCount": 1,
+    "missing": 0,
+    "cta": 712.90625,
+    "missingAfterLoad": 0,
+    "dialog": true,
+    "focus": true,
+    "anchor": 95.90625,
+    "errors": []
+  },
+  {
+    "reduced": "none"
+  }
+]

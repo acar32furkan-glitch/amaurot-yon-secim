@@ -1,0 +1,125 @@
+/* ============================================================
+   C — Tasarım stüdyosunun sayfası
+   Asimetrik açılış: 7 sütun ana ürün, 1 sütun boşluk, 4 sütunda
+   marka cümlesi + üretim karesi farklı yüksekliklerden başlar.
+   Koleksiyon: iki ürün üstte, üçüncü ürün altta + malzeme notu.
+   Tek küçük görüntü reveal (malzeme karesi).
+   ============================================================ */
+
+/* ---------- açılış ---------- */
+.cHero{padding-block:clamp(18px,3.4svh,44px) clamp(28px,5svh,56px)}
+.cHeroIc{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));align-items:start}
+
+.cYanIc{grid-column:9/13;grid-row:1;margin-top:clamp(16px,6svh,56px)}
+.cYanIc h1{font-size:clamp(2.5rem,3.4vw,3.25rem);line-height:1.04;margin-top:10px}
+.cTanim{margin-top:12px;font-size:16px;line-height:1.6;color:var(--yardimci);max-width:40ch}
+
+.cAna{grid-column:1/8;grid-row:1/span 3;margin:0;align-self:start}
+.cAna img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+
+.cEylem{grid-column:9/13;grid-row:2;margin-top:clamp(14px,2.6svh,26px)}
+
+.cUretim{
+  grid-column:9/13;grid-row:3;justify-self:end;
+  width:clamp(220px,17vw,250px);margin:clamp(24px,4svh,44px) 0 0;
+}
+.cUretim img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:center 42%}
+
+/* ---------- koleksiyon ---------- */
+.cKoleksiyon{padding-block:clamp(30px,6svh,64px)}
+.cUrunler{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(20px,2.6vw,34px)}
+
+.cKolUst{grid-column:9/13;grid-row:1;align-self:start;padding-top:4px}
+.cKolUst h2{font-size:clamp(1.9rem,2.7vw,2.6rem);line-height:1.06;margin-top:10px}
+.cKolUst p:last-child{margin-top:8px;font-size:14px;color:var(--yardimci)}
+
+.cKart{margin:0}
+.cK1{grid-column:1/5;grid-row:1}
+.cK2{grid-column:5/9;grid-row:1}
+.cKart img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.cKart h3{margin-top:12px;font-size:clamp(1.12rem,1.5vw,1.4rem);line-height:1.1}
+.cKart .tur{margin-top:3px}
+
+.cBuyuk{grid-column:1/8;grid-row:2;margin-top:clamp(28px,5svh,52px)}
+.cBag{margin:0;aspect-ratio:4/3;overflow:hidden}
+.cBag img{width:100%;height:100%;object-fit:cover}
+.cBigi{margin-top:12px}
+.cBigi h3{font-size:clamp(1.35rem,1.9vw,1.8rem);line-height:1.1}
+.cBigi .tur{margin-top:3px}
+
+.cMalNot{grid-column:9/13;grid-row:2;align-self:center;border-top:1px solid var(--tas);padding-top:18px}
+.cMalNot p:nth-child(2){margin-top:8px;font-size:17px;line-height:1.55;max-width:32ch}
+.cMalNot .git{margin-top:14px}
+
+/* ---------- malzeme ---------- */
+.cMalzeme{border-top:1px solid var(--tas)}
+.cMalzemeIc{
+  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:clamp(24px,3vw,44px);align-items:center;
+  padding-block:clamp(40px,7svh,72px);
+}
+.cMalMetin{grid-column:1/6}
+.cMalMetin h2{font-size:clamp(2.2rem,3.2vw,3rem);line-height:1.05;margin-top:10px}
+.cMalMetin p:last-child{margin-top:12px;font-size:16px;color:var(--yardimci);max-width:32ch}
+.cMalGorsel{grid-column:7/13;margin:0;height:clamp(340px,54svh,500px);overflow:hidden}
+.cMalGorsel img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+
+/* ---------- hikâye ---------- */
+.cHikaye{border-top:1px solid var(--tas);padding-block:clamp(40px,7svh,72px)}
+.cHikIc{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(24px,3.4vw,48px);align-items:end}
+.cHikMetin{grid-column:1/5;padding-bottom:4px}
+.cHikMetin h2{font-size:clamp(2.1rem,3vw,2.8rem);line-height:1.05;margin-top:10px}
+.cHikMetin p{font-size:16px;margin-top:12px;color:var(--yardimci);max-width:34ch}
+.cHikGorsel{grid-column:5/13;margin:0;height:clamp(320px,58svh,560px);overflow:hidden}
+.cHikGorsel img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- atölye (metin ağırlıklı, görselsiz) ---------- */
+.cAtolye{padding-block:0 clamp(40px,7svh,72px)}
+.cAtIc{
+  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:clamp(20px,3vw,44px);align-items:start;
+  border-top:1px solid var(--tas);padding-top:clamp(24px,4svh,40px);
+}
+.cAtSol{grid-column:1/5}
+.cAtSol h2{font-size:clamp(1.9rem,2.6vw,2.4rem);line-height:1.05;margin-top:8px}
+.cAtSag{grid-column:5/12;padding-top:6px}
+.cAtSag p{font-size:16px;line-height:1.7;color:var(--yardimci);max-width:62ch}
+
+/* ---------- mobil ---------- */
+@media (max-width:900px){
+  .cHero{padding-block:16px 26px}
+  .cHeroIc{display:flex;flex-direction:column}
+  .cYanIc{margin-top:0}
+  .cYanIc h1{font-size:clamp(2.1rem,8.6vw,2.6rem)}
+  .cTanim{margin-top:10px;font-size:15px;max-width:none}
+
+  .cAna{margin-top:18px}
+  .cAna img{aspect-ratio:4/3}
+  .cEylem{margin-top:14px}
+  .cUretim{width:100%;margin-top:18px;justify-self:stretch}
+  .cUretim img{aspect-ratio:4/5;object-position:center 45%}
+
+  .cKoleksiyon{padding-block:26px 36px}
+  .cUrunler{display:flex;flex-direction:column;gap:26px}
+  .cKolUst h2{font-size:clamp(1.9rem,7.8vw,2.3rem)}
+  .cBuyuk{margin-top:0}
+  .cMalNot{align-self:start;margin-top:0}
+  .cMalNot p:nth-child(2){max-width:none}
+
+  .cMalzemeIc{display:flex;flex-direction:column;gap:18px;padding-block:32px}
+  .cMalGorsel{order:-1;width:100%;height:auto}
+  .cMalGorsel img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+  .cMalMetin p:last-child{max-width:none}
+
+  .cHikaye{padding-block:32px}
+  .cHikIc{display:flex;flex-direction:column;gap:20px}
+  .cHikMetin{padding-bottom:0}
+  .cHikMetin p{max-width:none}
+  .cHikGorsel{width:100%;height:auto}
+  .cHikGorsel img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+
+  .cAtolye{padding-block:0 34px}
+  .cAtIc{display:block;padding-top:22px}
+  .cAtSag{margin-top:12px;padding-top:0}
+  .cAtSag p{max-width:none;font-size:15px}
+}

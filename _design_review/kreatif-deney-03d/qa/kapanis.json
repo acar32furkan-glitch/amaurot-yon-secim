@@ -1,0 +1,243 @@
+{
+  "tarih": "2026-10-24T17:48:24.054Z",
+  "mobil": {
+    "360": {
+      "bas": {
+        "scrollY": 0,
+        "gorselTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "gorselKutu": {
+          "x": 16,
+          "y": 85,
+          "w": 328,
+          "h": 246
+        },
+        "cerceveTasma": {
+          "cerceve": {
+            "x": 16,
+            "y": 85,
+            "w": 328,
+            "h": 246
+          },
+          "tasma": false
+        },
+        "kartOpaklik": "0",
+        "kartTransform": "matrix(1, 0, 0, 1, 0, 12)",
+        "kartSinif": "kBuyuk",
+        "ucanVar": false,
+        "yatayTasma": 0
+      },
+      "orta": {
+        "scrollY": 100,
+        "gorselTransform": "matrix(1.0175, 0, 0, 1.0175, 0, 0)",
+        "gorselKutu": {
+          "x": 13.1,
+          "y": -17,
+          "w": 333.7,
+          "h": 250.3
+        },
+        "cerceveTasma": {
+          "cerceve": {
+            "x": 16,
+            "y": -15,
+            "w": 328,
+            "h": 246
+          },
+          "tasma": true
+        },
+        "kartOpaklik": "0.913087",
+        "kartTransform": "matrix(1, 0, 0, 1, 0, 1.04295)",
+        "kartSinif": "kBuyuk gorundu",
+        "ucanVar": false,
+        "yatayTasma": 0
+      },
+      "son": {
+        "scrollY": 200,
+        "gorselTransform": "matrix(1.035, 0, 0, 1.035, 0, 0)",
+        "gorselKutu": {
+          "x": 10.3,
+          "y": -119,
+          "w": 339.5,
+          "h": 254.6
+        },
+        "cerceveTasma": {
+          "cerceve": {
+            "x": 16,
+            "y": -115,
+            "w": 328,
+            "h": 246
+          },
+          "tasma": true
+        },
+        "kartOpaklik": "1",
+        "kartTransform": "none",
+        "kartSinif": "kBuyuk gorundu",
+        "ucanVar": false,
+        "yatayTasma": 0
+      }
+    },
+    "390": {
+      "bas": {
+        "scrollY": 0,
+        "gorselTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "gorselKutu": {
+          "x": 20,
+          "y": 85,
+          "w": 350,
+          "h": 262.5
+        },
+        "cerceveTasma": {
+          "cerceve": {
+            "x": 20,
+            "y": 85,
+            "w": 350,
+            "h": 262.5
+          },
+          "tasma": false
+        },
+        "kartOpaklik": "0",
+        "kartTransform": "matrix(1, 0, 0, 1, 0, 12)",
+        "kartSinif": "kBuyuk",
+        "ucanVar": false,
+        "yatayTasma": 0
+      },
+      "orta": {
+        "scrollY": 100,
+        "gorselTransform": "matrix(1.0175, 0, 0, 1.0175, 0, 0)",
+        "gorselKutu": {
+          "x": 16.9,
+          "y": -17.1,
+          "w": 356.1,
+          "h": 267.1
+        },
+        "cerceveTasma": {
+          "cerceve": {
+            "x": 20,
+            "y": -15,
+            "w": 350,
+            "h": 262.5
+          },
+          "tasma": true
+        },
+        "kartOpaklik": "0.913233",
+        "kartTransform": "matrix(1, 0, 0, 1, 0, 1.04121)",
+        "kartSinif": "kBuyuk gorundu",
+        "ucanVar": false,
+        "yatayTasma": 0
+      },
+      "son": {
+        "scrollY": 200,
+        "gorselTransform": "matrix(1.035, 0, 0, 1.035, 0, 0)",
+        "gorselKutu": {
+          "x": 13.9,
+          "y": -119.2,
+          "w": 362.3,
+          "h": 271.7
+        },
+        "cerceveTasma": {
+          "cerceve": {
+            "x": 20,
+            "y": -115,
+            "w": 350,
+            "h": 262.5
+          },
+          "tasma": true
+        },
+        "kartOpaklik": "1",
+        "kartTransform": "none",
+        "kartSinif": "kBuyuk gorundu",
+        "ucanVar": false,
+        "yatayTasma": 0
+      }
+    },
+    "kartBeliris": {
+      "sinif": "kBuyuk gorundu",
+      "opaklik": "1",
+      "transform": "none"
+    }
+  },
+  "masaustu": {
+    "hizalama": {
+      "hero": {
+        "x": 429.8,
+        "w": 580.3
+      },
+      "hedef": {
+        "x": 48,
+        "w": 580.3
+      }
+    },
+    "gecis": {
+      "bas": {
+        "ucus": false,
+        "klon": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "h1Kesisim": false,
+        "btnKesisim": false,
+        "baslikKesisim": false,
+        "kaynakOp": "1",
+        "hedefOp": "1"
+      },
+      "orta": {
+        "ucus": true,
+        "klon": {
+          "x": 238.9,
+          "y": 303,
+          "w": 580.3,
+          "h": 435.2
+        },
+        "h1Kesisim": false,
+        "btnKesisim": false,
+        "baslikKesisim": false,
+        "kaynakOp": "0",
+        "hedefOp": "0"
+      },
+      "son": {
+        "ucus": false,
+        "klon": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "h1Kesisim": false,
+        "btnKesisim": false,
+        "baslikKesisim": false,
+        "kaynakOp": "0",
+        "hedefOp": "1"
+      }
+    },
+    "klavye": {
+      "baslangic": "koleksiyonBaslik",
+      "sira": [
+        {
+          "urun": "Seamless Pack",
+          "x": 48,
+          "y": 1411
+        },
+        {
+          "urun": "Butterfly Flip",
+          "x": 668,
+          "y": 1392
+        },
+        {
+          "urun": "Basic Card Wallet",
+          "x": 1050,
+          "y": 1392
+        }
+      ]
+    }
+  },
+  "diger": {
+    "azHareket": {
+      "transform": "none",
+      "jsHareket": false,
+      "kartOpaklik": "1",
+      "kartTransform": "none"
+    }
+  },
+  "konsol": []
+}

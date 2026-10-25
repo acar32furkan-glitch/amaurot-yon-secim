@@ -1,0 +1,146 @@
+/* ============================================================
+   B — Malzemeden ürüne
+   Açılış: 7 sütun makro + 4 sütun ürün, arada 1 sütun boşluk.
+   Geçiş: makro geri çekilir, ürün yarım ekranda koleksiyondaki
+   yerine ulaşır. Yalnızca >=1000px + JS + hareket kısıtı yokken.
+   ============================================================ */
+
+/* ---------- açılış ---------- */
+.bHero{padding-block:clamp(20px,3.6svh,44px) clamp(28px,5svh,56px)}
+.bHeroIc{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));align-items:start;position:relative}
+
+.bMakro{
+  grid-column:1/8;position:relative;margin:0;overflow:hidden;
+  height:clamp(430px,58svh,560px);background:#e9e4db;
+}
+.bMakro>img{width:100%;height:100%;object-fit:cover;object-position:52% 46%}
+
+.bPanel{
+  position:absolute;top:0;left:var(--kenar);z-index:2;
+  width:min(430px,64%);
+  background:var(--krem);
+  padding:clamp(20px,2.4vw,30px) clamp(20px,2.6vw,34px) clamp(22px,2.6vw,32px);
+}
+.bPanel h1{font-size:clamp(2.8rem,4.1vw,4rem);line-height:1.02}
+.bTanim{margin-top:12px;font-size:16px;color:var(--yardimci)}
+.bPanel .git{margin-top:16px}
+
+.bUrun{
+  grid-column:9/13;margin:clamp(64px,13svh,128px) 0 0;
+  aspect-ratio:4/3;overflow:hidden;
+}
+.bUrun img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+
+/* ---------- koleksiyon ---------- */
+.bKoleksiyon{padding-block:clamp(30px,6svh,64px)}
+/* sağ üstte açıklama yok: uçan ürün geçişte başlığı örtmesin */
+.bKoleksiyon .bolumUst{display:block;max-width:44ch}
+.bKoleksiyon .bolumUst p{margin-top:6px}
+
+.bGrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(20px,2.6vw,34px);align-items:start}
+.bKucukler{grid-column:1/7;display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,26px);align-items:start}
+.bKart{margin:0}
+.bKart img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.bKart h3{margin-top:12px;font-size:clamp(1.12rem,1.5vw,1.4rem);line-height:1.1}
+.bKart .tur{margin-top:3px}
+
+.bBuyuk{grid-column:8/13;margin:0}
+.bHedef{aspect-ratio:4/3;overflow:hidden}
+.bHedef img{width:100%;height:100%;object-fit:cover}
+.bBigi{margin-top:12px}
+.bBigi h3{font-size:clamp(1.35rem,1.9vw,1.8rem);line-height:1.1}
+.bBigi .tur{margin-top:3px}
+
+/* ---------- malzeme ---------- */
+.bMalzeme{border-top:1px solid var(--tas)}
+.bMalzemeIc{
+  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:clamp(24px,3.4vw,44px);align-items:center;
+  padding-block:clamp(40px,7svh,72px);
+}
+.bMalGorsel{grid-column:1/8;margin:0;height:clamp(300px,50svh,480px);overflow:hidden}
+.bMalGorsel img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.bMalMetin{grid-column:9/13}
+.bMalMetin h2{font-size:clamp(2.1rem,3vw,2.9rem);line-height:1.06;margin-top:10px}
+.bMalMetin p:last-child{margin-top:12px;font-size:16px;color:var(--yardimci);max-width:34ch}
+
+/* ---------- hikâye ---------- */
+.bHikaye{border-top:1px solid var(--tas);padding-block:clamp(40px,7svh,72px)}
+.bHikUst{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);
+  align-items:end;margin-bottom:clamp(24px,4svh,40px);
+}
+.bHikUst h2{font-size:clamp(2.4rem,3.4vw,3.2rem);margin-top:10px}
+.bHikMetin p{font-size:16px;max-width:46ch}
+.bHikMetin p+p{margin-top:12px;color:var(--yardimci)}
+.bHikGorsel{margin:0;height:clamp(300px,52svh,520px);overflow:hidden}
+.bHikGorsel img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- atölye (kısa satır) ---------- */
+.bAtolye{padding-block:0 clamp(40px,7svh,72px)}
+.bAtolyeIc{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(20px,3vw,44px);align-items:center}
+.bAtGorsel{grid-column:1/4;margin:0;height:clamp(180px,26svh,250px);overflow:hidden}
+.bAtGorsel img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.bAtMetin{grid-column:4/10}
+.bAtMetin h2{font-size:clamp(1.8rem,2.4vw,2.3rem);margin-top:8px}
+.bAtMetin p:last-child{margin-top:10px;font-size:15px;line-height:1.7;color:var(--yardimci);max-width:60ch}
+
+/* ---------- geçiş ---------- */
+.ucan{
+  position:fixed;left:0;top:0;z-index:15;display:none;
+  object-fit:cover;pointer-events:none;
+  will-change:left,top,width,height;
+}
+.ucan.acik{display:block}
+
+@media (min-width:1000px) and (prefers-reduced-motion:no-preference){
+  html.gecis-b .bMakro>img{
+    transform-origin:50% 42%;
+    transform:scale(calc(1 - var(--p,0) * .06)) translateY(calc(var(--p,0) * -10px));
+    opacity:clamp(.62,calc(1 - var(--p,0) * .38),1);
+    transition:transform .07s linear,opacity .07s linear;
+  }
+  html.gecis-b #bUrunGorsel{transition:opacity .12s linear}
+  html.gecis-b #bUrunGorsel.gizli{opacity:0}
+  /* hedef yuva yalnızca uçuş sırasında boşalır; sayfa hareketsizken doludur */
+  html.gecis-b.b-ucus #bHedefGorsel{opacity:0}
+  html.gecis-b.b-ucus #bHedef.tamam #bHedefGorsel{opacity:1}
+}
+
+/* ---------- mobil ---------- */
+@media (max-width:900px){
+  .bHero{padding-block:18px 26px}
+  .bHeroIc{display:block}
+
+  .bPanel{position:static;width:auto;background:none;padding:0 0 16px}
+  .bPanel h1{font-size:clamp(2.2rem,9vw,2.7rem)}
+  .bPanel .git{margin-top:10px}
+
+  .bMakro{height:auto}
+  .bMakro>img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 45%}
+
+  .bUrun{margin-top:14px;aspect-ratio:4/3}
+
+  .bKoleksiyon{padding-block:28px 40px}
+  .bGrid{display:flex;flex-direction:column;gap:26px}
+  .bBuyuk{order:1}
+  .bKucukler{order:2;gap:12px}
+  .bKart h3{font-size:16px}
+  .bKart .tur{font-size:13px}
+  .bBigi h3{font-size:1.35rem}
+
+  .bMalzemeIc{display:block;padding-block:32px}
+  .bMalGorsel{height:auto;margin-bottom:18px}
+  .bMalGorsel img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+  .bMalMetin p:last-child{max-width:none}
+
+  .bHikaye{padding-block:32px}
+  .bHikUst{display:block;margin-bottom:20px}
+  .bHikMetin{margin-top:16px}
+  .bHikGorsel{height:auto}
+  .bHikGorsel img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+
+  .bAtolye{padding-block:0 36px}
+  .bAtolyeIc{display:block}
+  .bAtGorsel{height:220px;margin-bottom:18px}
+}
