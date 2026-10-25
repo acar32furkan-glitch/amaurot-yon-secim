@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMAUROT — Studio From Utopia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0E0B09',
+            card: '#16120F',
+            line: '#26201B',
+            sand: '#E8E0D5',
+            muted: '#8A7E72',
+            taba: '#B87344'
+          },
+          fontFamily: {
+            display: ['"Syne"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #0E0B09;
+      color: #E8E0D5;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+    .photo {
+      background-color: #16120F;
+      overflow: hidden;
+      position: relative;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .group:hover .photo img {
+      transform: scale(1.03);
+    }
+    .logo-invert {
+      filter: invert(1) brightness(0.9) contrast(1.4);
+      mix-blend-mode: screen;
+    }
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: #0E0B09; }
+    ::-webkit-scrollbar-thumb { background: #26201B; }
+  </style>
+</head>
+<body class="selection:bg-taba selection:text-bg">
+
+  <!-- SADE ÜST BAR -->
+  <header class="fixed top-0 inset-x-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line/60">
+    <div class="max-w-[1360px] mx-auto px-6 sm:px-10 h-20 flex items-center justify-between">
+      
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-8 overflow-hidden">
+          <img 
+            data-archive-path="gorseller/IMG-0233.jpg"
+            data-sheet="sheet-2-0.jpg" data-col="4" data-row="7" data-crop="logo"
+            alt="AMAUROT"
+            class="w-full h-full object-contain logo-invert" />
+        </div>
+        <span class="font-display text-lg tracking-[0.28em] text-sand">AMAUROT</span>
+      </a>
+
+      <div class="flex items-center gap-8 text-xs tracking-[0.15em] uppercase text-muted">
+        <a href="#koleksiyon" class="hover:text-sand transition-colors hidden sm:inline">Koleksiyon</a>
+        <a href="#hikaye" class="hover:text-sand transition-colors hidden sm:inline">Ütopya</a>
+        <a href="#iletisim" class="hover:text-sand transition-colors hidden sm:inline">Atölye</a>
+        <button onclick="toggleCart(true)" class="text-sand hover:text-taba transition-colors">
+          Sepet (<span id="cart-count">0</span>)
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- SESSİZ GİRİŞ (Görsel Odaklı) -->
+  <section class="pt-32 pb-20 sm:pt-40 sm:pb-28 px-6 sm:px-10 max-w-[1360px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-14">
+      <div class="lg:col-span-8">
+        <p class="text-xs tracking-[0.25em] uppercase text-muted mb-4">Studio From Utopia · Isparta</p>
+        <h1 class="font-display text-3xl sm:text-5xl lg:text-[54px] text-sand leading-[1.12] font-normal">
+          Haritalarda olmayan, ama her el izinde hissedilen bir düş şehri.
+        </h1>
+      </div>
+      <div class="lg:col-span-4 lg:text-right">
+        <p class="text-sm text-muted leading-relaxed">
+          Doğal deri, ahşap ve ham metal. Tamamen el dikişiyle, 20 yıl ömürlü.
+        </p>
+      </div>
+    </div>
+
+    <!-- 3'lü Sinematik Arşiv Panosu -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
+      <div class="md:col-span-5 photo aspect-[4/5]">
+        <img 
+          data-archive-path="gorseller/IMG-0272.jpg"
+          data-sheet="sheet-0-0.jpg" data-col="3" data-row="3" data-crop="v"
+          alt="Studio From Utopia" />
+      </div>
+      <div class="md:col-span-4 photo aspect-[4/5]">
+        <img 
+          data-archive-path="gorseller/IMG-0378.jpg"
+          data-sheet="sheet-0-1.jpg" data-col="1" data-row="1" data-crop="v"
+          alt="Atölye Tezgahı" />
+      </div>
+      <div class="md:col-span-3 flex flex-col justify-between gap-5">
+        <div class="photo aspect-[4/3] h-full">
+          <img 
+            data-archive-path="gorseller/k-155bc7d85f.jpg"
+            data-sheet="sheet-0-0.jpg" data-col="3" data-row="6" data-crop="h"
+            alt="El İşçiliği" />
+        </div>
+        <div class="photo aspect-[4/5] h-full">
+          <img 
+            data-archive-path="gorseller/IMG-0200.jpg"
+            data-sheet="sheet-3-1.jpg" data-col="4" data-row="0" data-crop="v"
+            alt="Deri Postları" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KOLEKSİYON -->
+  <main id="koleksiyon" class="max-w-[1360px] mx-auto px-6 sm:px-10 py-16 border-t border-line">
+    
+    <!-- Filtre ve 5 Deri Seçici (Tek Satırda Yalın) -->
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pb-12">
+      
+      <!-- Kategoriler -->
+      <div class="flex flex-wrap items-center gap-6 text-xs tracking-[0.18em] uppercase" id="cat-nav">
+        <button onclick="setCat('all')" data-cat="all" class="cat-link text-sand border-b border-sand pb-1">Tümü</button>
+        <button onclick="setCat('cuzdan-kartlik')" data-cat="cuzdan-kartlik" class="cat-link text-muted hover:text-sand pb-1 transition-colors">Cüzdan & Kartlık</button>
+        <button onclick="setCat('canta')" data-cat="canta" class="cat-link text-muted hover:text-sand pb-1 transition-colors">Çanta</button>
+        <button onclick="setCat('seyahat-aksesuar')" data-cat="seyahat-aksesuar" class="cat-link text-muted hover:text-sand pb-1 transition-colors">Aksesuar</button>
+      </div>
+
+      <!-- 5 Deri Kartelası -->
+      <div class="flex flex-wrap items-center gap-4">
+        <span class="text-xs text-muted mr-1">Deri:</span>
+        <div id="leather-swatches" class="flex flex-wrap items-center gap-3"></div>
+      </div>
+
+    </div>
+
+    <!-- Ürün Izgarası (Sadece Fotoğraf, İsim ve Fiyat) -->
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-14"></div>
+
+  </main>
+
+  <!-- HİKAYE (Kısa, Sessiz, Fotoğraf Odaklı) -->
+  <section id="hikaye" class="max-w-[1360px] mx-auto px-6 sm:px-10 py-24 border-t border-line">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-5 space-y-6">
+        <div class="w-16 h-16 overflow-hidden">
+          <img 
+            data-archive-path="gorseller/rozet-craft.png"
+            data-sheet="sheet-2-0.jpg" data-col="2" data-row="4" data-crop="logo"
+            alt="Amaurot Craft"
+            class="w-full h-full object-contain logo-invert" />
+        </div>
+        <h2 class="font-display text-2xl sm:text-3xl text-sand font-normal leading-snug">
+          Thomas More'un ütopyasından, sessiz ama derin bir evren.
+        </h2>
+        <p class="text-sm text-muted leading-relaxed">
+          Her tasarımda, her el dikişinde, her deri, ahşap ve ham metal parçada yeniden kurgulanan bir dünya. AMAUROT; doğayla uyumlu bir yaşamı, içsel bir sadeliği ve zamansız zanaatkârlığı temsil eder.
+        </p>
+      </div>
+
+      <div class="lg:col-span-7 grid grid-cols-3 gap-4">
+        <div class="photo aspect-[3/4]">
+          <img 
+            data-archive-path="gorseller/IMG-0308.jpg"
+            data-sheet="sheet-0-1.jpg" data-col="1" data-row="5" data-crop="v"
+            alt="Amaurot Taş Ev" />
+        </div>
+        <div class="photo aspect-[3/4]">
+          <img 
+            data-archive-path="gorseller/IMG-0297.jpg"
+            data-sheet="sheet-0-1.jpg" data-col="3" data-row="1" data-crop="v"
+            alt="Amaurot Bozkır" />
+        </div>
+        <div class="photo aspect-[3/4]">
+          <img 
+            data-archive-path="gorseller/IMG-0318.jpg"
+            data-sheet="sheet-0-2.jpg" data-col="5" data-row="1" data-crop="h"
+            alt="Isparta 32" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ATÖLYE & İLETİŞİM -->
+  <footer id="iletisim" class="max-w-[1360px] mx-auto px-6 sm:px-10 py-16 border-t border-line text-xs text-muted">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12">
+      
+      <div class="space-y-2">
+        <p class="text-sand tracking-[0.2em] uppercase">AMAUROT</p>
+        <p>info@amaurot.com.tr</p>
+        <p>@amaurotleatherdesign</p>
+      </div>
+
+      <div class="space-y-1.5">
+        <p class="text-sand uppercase tracking-[0.14em]">Workshop & Atelier</p>
+        <p>İstiklal Mah. 114. Cad. No: 55 D: 1, Isparta</p>
+        <p><a href="tel:+905525676660" class="hover:text-sand">+90 552 567 66 60</a> · <a href="tel:+905362762830" class="hover:text-sand">+90 536 276 28 30</a></p>
+      </div>
+
+      <div class="space-y-1.5">
+        <p class="text-sand uppercase tracking-[0.14em]">Showroom</p>
+        <p>Kunduracılar Sitesi Kat: 4 D: 183, Isparta</p>
+        <p><a href="tel:+905432896738" class="hover:text-sand">+90 543 289 67 38</a></p>
+      </div>
+
+    </div>
+
+    <div class="pt-8 border-t border-line/50 flex items-center justify-between">
+      <span>© 2026 AMAUROT</span>
+      <label class="cursor-pointer hover:text-sand" title="Bilgisayarınızdaki ÜRÜNLER klasörünü seçin">
+        <span>Klasör Bağla</span>
+        <input type="file" webkitdirectory directory multiple class="hidden" onchange="handleLocalFolder(this.files)" />
+      </label>
+    </div>
+  </footer>
+
+  <!-- ÜRÜN DETAY MODAL -->
+  <div id="modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8">
+    <div class="bg-card border border-line max-w-4xl w-full max-h-[90vh] overflow-y-auto grid grid-cols-1 md:grid-cols-12 relative">
+      
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-10 text-xs uppercase tracking-[0.15em] text-muted hover:text-sand bg-bg/80 px-3 py-1.5">
+        Kapat ✕
+      </button>
+
+      <!-- Sol: Fotoğraflar -->
+      <div class="md:col-span-7 p-5 bg-bg flex flex-col justify-between">
+        <div class="photo aspect-[4/5] w-full">
+          <img id="modal-img" src="" alt="" />
+        </div>
+        <div id="modal-thumbs" class="grid grid-cols-4 gap-2.5 mt-3"></div>
+      </div>
+
+      <!-- Sağ: Öz Bilgi ve Sipariş -->
+      <div class="md:col-span-5 p-6 sm:p-8 flex flex-col justify-between space-y-6">
+        <div class="space-y-4">
+          <h3 id="modal-name" class="font-display text-2xl text-sand font-normal"></h3>
+          <p id="modal-price" class="text-lg text-taba"></p>
+          <p id="modal-desc" class="text-xs text-muted leading-relaxed pt-1"></p>
+
+          <!-- Deri Seçimi -->
+          <div class="pt-4 border-t border-line">
+            <span class="block text-[11px] uppercase tracking-[0.14em] text-muted mb-3">Deri Tercihi</span>
+            <div id="modal-leathers" class="space-y-1.5"></div>
+          </div>
+        </div>
+
+        <div class="space-y-2.5 pt-4 border-t border-line">
+          <button id="modal-add" class="w-full bg-sand text-bg text-xs uppercase tracking-[0.16em] py-3.5 hover:bg-taba transition-colors font-medium">
+            Sepete Ekle
+          </button>
+          <a id="modal-wa" href="#" target="_blank" rel="noopener" class="block w-full border border-line text-center text-xs uppercase tracking-[0.14em] py-3 text-muted hover:text-sand transition-colors">
+            WhatsApp ile Sipariş
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SEPET ÇEKMECESİ -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-sm flex justify-end">
+    <div class="bg-card w-full max-w-sm h-full flex flex-col justify-between border-l border-line p-6 sm:p-8">
+      <div>
+        <div class="flex items-center justify-between pb-5 border-b border-line">
+          <span class="font-display text-lg text-sand">Sipariş Listesi</span>
+          <button onclick="toggleCart(false)" class="text-xs text-muted hover:text-sand">Kapat ✕</button>
+        </div>
+        <div id="cart-items" class="py-6 space-y-4 max-h-[65vh] overflow-y-auto"></div>
+      </div>
+
+      <div class="pt-5 border-t border-line space-y-3">
+        <div class="flex items-center justify-between text-sm">
+          <span class="text-muted">Toplam</span>
+          <span id="cart-total" class="text-sand">0 ₺</span>
+        </div>
+        <button onclick="sendWhatsApp()" class="w-full bg-sand text-bg text-xs uppercase tracking-[0.16em] py-3.5 font-medium hover:bg-taba transition-colors">
+          WhatsApp ile Gönder
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const LEATHERS = [
+      { id: 'pull-up-bordo', name: 'Pull-up Bordo', color: '#68232D' },
+      { id: 'pull-up-camel', name: 'Pull-up Camel', color: '#A35C37' },
+      { id: 'pull-up-taba',  name: 'Pull-up Taba',  color: '#966232' },
+      { id: 'crazy-taba',    name: 'Crazy Taba',    color: '#7B4E28' },
+      { id: 'crazy-camel',   name: 'Crazy Camel',   color: '#8F5932' }
+    ];
+
+    const PRODUCTS = [
+      {
+        id: 1, name: 'Origami Card Holder', category: 'cuzdan-kartlik', price: 750,
+        desc: 'Tek parça derinin origami tekniğiyle katlanıp tek kenarının dikilmesiyle üretilir. 2 bölme, 12 kart kapasitesi.',
+        photos: [
+          { path: 'gorseller/IMG-0001.jpg', sheet: 'sheet-0-2.jpg', col: 4, row: 6, crop: 'v' },
+          { path: 'gorseller/IMG-0002.jpg', sheet: 'sheet-0-2.jpg', col: 3, row: 6, crop: 'v' },
+          { path: 'gorseller/IMG-0003.jpg', sheet: 'sheet-0-1.jpg', col: 5, row: 7, crop: 'v' }
+        ]
+      },
+      {
+        id: 2, name: 'Basic Card Wallet', category: 'cuzdan-kartlik', price: 850,
+        desc: '4 bağımsız bölmeden oluşan avuç içi kartlık. Minimum 12 kart, küçük evrak ve not kağıdı kapasiteli.',
+        photos: [
+          { path: 'gorseller/IMG-0011.jpg', sheet: 'sheet-3-0.jpg', col: 2, row: 6, crop: 'v' },
+          { path: 'gorseller/IMG-0204.jpg', sheet: 'sheet-3-0.jpg', col: 1, row: 6, crop: 'v' },
+          { path: 'gorseller/IMG-0018.jpg',  sheet: 'sheet-3-0.jpg', col: 4, row: 6, crop: 'v' }
+        ]
+      },
+      {
+        id: 3, name: 'Butterfly Flip Wallet', category: 'cuzdan-kartlik', price: 2000,
+        desc: '6 açık, 2 gizli bölmesiyle toplam 24 kart kapasiteli. Ortada metal banknot klipsi yer alır.',
+        photos: [
+          { path: 'gorseller/IMG-0036.jpg', sheet: 'sheet-3-1.jpg', col: 0, row: 3, crop: 'v' },
+          { path: 'gorseller/IMG-0039.jpg', sheet: 'sheet-3-1.jpg', col: 5, row: 3, crop: 'v' },
+          { path: 'gorseller/IMG-0037.jpg', sheet: 'sheet-3-1.jpg', col: 2, row: 3, crop: 'v' }
+        ]
+      },
+      {
+        id: 4, name: 'Mod. Dad Wallet', category: 'cuzdan-kartlik', price: 2000,
+        desc: 'Klasik cüzdanın yalın yorumu. 12 kart kapasiteli 4 bölme ve nakitleri ayırmayı sağlayan çift banknot gözü.',
+        photos: [
+          { path: 'gorseller/IMG-0048.jpg', sheet: 'sheet-0-2.jpg', col: 2, row: 5, crop: 'v' },
+          { path: 'gorseller/IMG-0046.jpg',     sheet: 'sheet-0-2.jpg', col: 0, row: 6, crop: 'v' },
+          { path: 'gorseller/IMG-0058.jpg', sheet: 'sheet-4-0.jpg', col: 2, row: 0, crop: 'v' }
+        ]
+      },
+      {
+        id: 5, name: 'Passaport Holder', category: 'seyahat-aksesuar', price: 1650,
+        desc: 'Pasaport, biniş kartı ve temel kartlar için ince, gereksiz detaylardan arındırılmış seyahat kılıfı.',
+        photos: [
+          { path: 'gorseller/IMG-0072.jpg', sheet: 'sheet-0-2.jpg', col: 3, row: 3, crop: 'v' },
+          { path: 'gorseller/IMG-0075.jpg', sheet: 'sheet-0-2.jpg', col: 4, row: 3, crop: 'v' },
+          { path: 'gorseller/IMG-0071.jpg',         sheet: 'sheet-0-2.jpg', col: 0, row: 5, crop: 'v' }
+        ]
+      },
+      {
+        id: 6, name: 'Vertical Palm Wallet', category: 'cuzdan-kartlik', price: 1750,
+        desc: 'Dikey kompakt form. Yatay kart yerleşimi ve karşılıklı konumlandırılmış iki ayrı banknot bölmesi.',
+        photos: [
+          { path: 'gorseller/IMG-0062.jpg', sheet: 'sheet-3-1.jpg', col: 4, row: 5, crop: 'v' },
+          { path: 'gorseller/IMG-0063.jpg', sheet: 'sheet-3-1.jpg', col: 2, row: 5, crop: 'v' },
+          { path: 'gorseller/IMG-0065.jpg',  sheet: 'sheet-3-1.jpg', col: 1, row: 6, crop: 'v' }
+        ]
+      },
+      {
+        id: 7, name: 'Wear Bag', category: 'canta', price: 3700,
+        desc: 'Vücuda sabitlenen giyilebilir tasarım. iPad uyumlu geniş ana bölme ve fermuarlı yardımcı ön cep.',
+        photos: [
+          { path: 'gorseller/IMG-0086.jpg',   sheet: 'sheet-3-1.jpg', col: 2, row: 7, crop: 'v' },
+          { path: 'gorseller/IMG-0085.jpg',   sheet: 'sheet-3-1.jpg', col: 3, row: 7, crop: 'h' },
+          { path: 'gorseller/IMG-0094.jpg',    sheet: 'sheet-3-0.jpg', col: 5, row: 0, crop: 'v' },
+          { path: 'gorseller/IMG-0099.jpg', sheet: 'sheet-3-0.jpg', col: 4, row: 1, crop: 'v' }
+        ]
+      },
+      {
+        id: 8, name: 'Classic Bagpack', category: 'canta', price: 4500,
+        desc: 'Yan aparatları sayesinde hem sırt hem postacı çantası olarak kullanılan, iki bölmeli ve fermuarlı tasarım.',
+        photos: [
+          { path: 'gorseller/IMG-0103.jpg',  sheet: 'sheet-3-1.jpg', col: 1, row: 1, crop: 'v' },
+          { path: 'gorseller/IMG-0104.jpg',  sheet: 'sheet-3-1.jpg', col: 0, row: 1, crop: 'h' },
+          { path: 'gorseller/IMG-0105.jpg',  sheet: 'sheet-3-1.jpg', col: 5, row: 0, crop: 'v' }
+        ]
+      },
+      {
+        id: 9, name: 'Seamless Pack', category: 'canta', price: 3000,
+        desc: 'Hiç dikiş kullanılmadan katlama ve geçme tekniğiyle üretilen, bilgisayar ve evrak uyumlu postacı çantası.',
+        photos: [
+          { path: 'gorseller/IMG-0108.jpg',  sheet: 'sheet-3-1.jpg', col: 1, row: 2, crop: 'h' },
+          { path: 'gorseller/IMG-0107.jpg', sheet: 'sheet-3-1.jpg', col: 5, row: 1, crop: 'v' },
+          { path: 'gorseller/IMG-0109.jpg',  sheet: 'sheet-3-1.jpg', col: 2, row: 2, crop: 'v' }
+        ]
+      },
+      {
+        id: 10, name: 'Safely Dopp Kit', category: 'seyahat-aksesuar', price: 2400,
+        desc: 'Hem yan hem uçtan taşıma saplı, geniş açılan fermuarlı kişisel bakım ve seyahat çantası.',
+        photos: [
+          { path: 'gorseller/IMG-0157.jpg', sheet: 'sheet-4-0.jpg', col: 2, row: 6, crop: 'v' },
+          { path: 'gorseller/IMG-0153.jpg', sheet: 'sheet-4-0.jpg', col: 1, row: 5, crop: 'v' },
+          { path: 'gorseller/IMG-0155.jpg', sheet: 'sheet-4-0.jpg', col: 0, row: 5, crop: 'v' }
+        ]
+      },
+      {
+        id: 11, name: 'Zipper Handbag', category: 'canta', price: null,
+        desc: 'Çift deri taşıma saplı ve üstten fermuarlı günlük el çantası. Sipariş üzerine hazırlanır.',
+        photos: [
+          { path: 'gorseller/IMG-0131.jpg',   sheet: 'sheet-3-0.jpg', col: 3, row: 3, crop: 'v' },
+          { path: 'gorseller/IMG-0134.jpg',   sheet: 'sheet-3-0.jpg', col: 2, row: 2, crop: 'v' },
+          { path: 'gorseller/IMG-0125.jpg', sheet: 'sheet-4-0.jpg', col: 3, row: 7, crop: 'v' }
+        ]
+      },
+      {
+        id: 12, name: 'Tote Bag', category: 'canta', price: null,
+        desc: 'Yuvarlak deri saplı ve omuz askılı geniş Tote çanta. Sipariş üzerine hazırlanır.',
+        photos: [
+          { path: 'gorseller/IMG-0115.jpg', sheet: 'sheet-3-0.jpg', col: 4, row: 0, crop: 'v' },
+          { path: 'gorseller/IMG-0116.jpg', sheet: 'sheet-3-0.jpg', col: 2, row: 0, crop: 'h' },
+          { path: 'gorseller/IMG-0117.jpg', sheet: 'sheet-3-0.jpg', col: 3, row: 0, crop: 'h' }
+        ]
+      },
+      {
+        id: 13, name: 'Tobacco Case', category: 'seyahat-aksesuar', price: null,
+        desc: 'Sarma kağıdı, filtre ve tütün bölmeli çıtçıtlı deri kese.',
+        photos: [
+          { path: 'gorseller/IMG-0146.jpg', sheet: 'sheet-3-1.jpg', col: 4, row: 6, crop: 'v' },
+          { path: 'gorseller/IMG-0143.jpg', sheet: 'sheet-3-1.jpg', col: 0, row: 7, crop: 'v' }
+        ]
+      },
+      {
+        id: 14, name: 'Tobacco Holder', category: 'seyahat-aksesuar', price: null,
+        desc: 'Deri bağcıklı rulo tütün kılıfı.',
+        photos: [
+          { path: 'gorseller/IMG-0149.jpg', sheet: 'sheet-0-0.jpg', col: 1, row: 3, crop: 'v' },
+          { path: 'gorseller/IMG-0150.jpg', sheet: 'sheet-3-1.jpg', col: 5, row: 6, crop: 'v' }
+        ]
+      },
+      {
+        id: 15, name: 'Belt', category: 'seyahat-aksesuar', price: null,
+        desc: 'Tek parça tam boy dana derisinden, bel ölçünüze özel üretilen masif tokalı kemer.',
+        photos: [
+          { path: 'gorseller/IMG-0172.jpg', sheet: 'sheet-4-0.jpg', col: 5, row: 0, crop: 'v' },
+          { path: 'gorseller/IMG-0173.jpg',  sheet: 'sheet-4-0.jpg', col: 4, row: 4, crop: 'v' }
+        ]
+      },
+      {
+        id: 16, name: 'Belt Bag', category: 'canta', price: null,
+        desc: 'Çıtçıt kapaklı kompakt bel ve kemer çantası.',
+        photos: [
+          { path: 'gorseller/IMG-0135.jpg',    sheet: 'sheet-3-0.jpg', col: 3, row: 2, crop: 'v' },
+          { path: 'gorseller/IMG-0136.jpg', sheet: 'sheet-3-0.jpg', col: 4, row: 3, crop: 'v' }
+        ]
+      }
+    ];
+
+    let activeCat = 'all';
+    let activeLeather = LEATHERS[1];
+    let cart = [];
+    let localFiles = {};
+    let sheetCache = {};
+
+    function loadPhoto(imgEl, path, sheet, col, row, crop) {
+      if (!imgEl) return;
+      if (path) {
+        const name = path.split('/').pop();
+        const k1 = name.normalize('NFC').toLowerCase();
+        const k2 = name.normalize('NFD').toLowerCase();
+        if (localFiles[k1] || localFiles[k2]) {
+          imgEl.src = localFiles[k1] || localFiles[k2];
+          return;
+        }
+      }
+      if (path) {
+        const probe = new Image();
+        probe.onload = () => { imgEl.src = probe.src; };
+        probe.onerror = () => {
+          const nfd = path.normalize('NFD');
+          if (nfd !== path) {
+            const p2 = new Image();
+            p2.onload = () => { imgEl.src = p2.src; };
+            p2.onerror = () => { cropSheet(imgEl, sheet, col, row, crop); };
+            p2.src = nfd;
+          } else {
+            cropSheet(imgEl, sheet, col, row, crop);
+          }
+        };
+        probe.src = path;
+      } else {
+        cropSheet(imgEl, sheet, col, row, crop);
+      }
+    }
+
+    function cropSheet(imgEl, sheetName, col, row, cropType) {
+      if (!sheetName) return;
+      const draw = (sImg) => {
+        const cw = sImg.naturalWidth / 6;
+        const ch = sImg.naturalHeight / 8;
+        let px = cw * 0.20, pt = ch * 0.02, ph = ch * 0.81;
+        if (cropType === 'h') { px = cw * 0.04; pt = ch * 0.14; ph = ch * 0.62; }
+        else if (cropType === 'logo') { px = cw * 0.08; pt = ch * 0.05; ph = ch * 0.78; }
+        const pw = cw - px * 2;
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.round(pw * 1.6);
+        canvas.height = Math.round(ph * 1.6);
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(sImg, col * cw + px, row * ch + pt, pw, ph, 0, 0, canvas.width, canvas.height);
+        try { imgEl.src = canvas.toDataURL('image/jpeg', 0.92); } catch (e) { imgEl.src = sheetName; }
+      };
+      if (sheetCache[sheetName] && sheetCache[sheetName].complete) {
+        draw(sheetCache[sheetName]);
+      } else {
+        const sImg = new Image();
+        sImg.crossOrigin = 'anonymous';
+        sImg.onload = () => { sheetCache[sheetName] = sImg; draw(sImg); };
+        sImg.src = sheetName;
+      }
+    }
+
+    function initStatic() {
+      document.querySelectorAll('img[data-archive-path]').forEach(img => {
+        loadPhoto(
+          img,
+          img.getAttribute('data-archive-path'),
+          img.getAttribute('data-sheet'),
+          parseInt(img.getAttribute('data-col'), 10),
+          parseInt(img.getAttribute('data-row'), 10),
+          img.getAttribute('data-crop') || 'v'
+        );
+      });
+    }
+
+    function handleLocalFolder(files) {
+      if (!files) return;
+      for (const f of files) {
+        if (f.type.startsWith('image/')) {
+          const u = URL.createObjectURL(f);
+          localFiles[f.name.normalize('NFC').toLowerCase()] = u;
+          localFiles[f.name.normalize('NFD').toLowerCase()] = u;
+        }
+      }
+      initStatic();
+      renderGrid();
+    }
+
+    function renderLeathers() {
+      const el = document.getElementById('leather-swatches');
+      el.innerHTML = LEATHERS.map(l => {
+        const active = l.id === activeLeather.id;
+        return `
+          <button onclick="selectLeather('${l.id}')" class="flex items-center gap-2 text-xs ${active ? 'text-sand' : 'text-muted hover:text-sand'}">
+            <span class="w-3.5 h-3.5 rounded-full border ${active ? 'border-sand scale-110' : 'border-transparent'}" style="background-color:${l.color}"></span>
+            <span>${l.name}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectLeather(id) {
+      const found = LEATHERS.find(l => l.id === id);
+      if (found) {
+        activeLeather = found;
+        renderLeathers();
+      }
+    }
+
+    function setCat(cat) {
+      activeCat = cat;
+      document.querySelectorAll('.cat-link').forEach(btn => {
+        btn.className = btn.getAttribute('data-cat') === cat
+          ? 'cat-link text-sand border-b border-sand pb-1'
+          : 'cat-link text-muted hover:text-sand pb-1 transition-colors';
+      });
+      renderGrid();
+    }
+
+    function priceText(p) {
+      return p ? p.toLocaleString('tr-TR') + ' ₺' : 'Özel Üretim';
+    }
+
+    function renderGrid() {
+      const grid = document.getElementById('product-grid');
+      const list = activeCat === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.category === activeCat);
+
+      grid.innerHTML = list.map(p => `
+        <article class="group cursor-pointer" onclick="openModal(${p.id})"
+          onmouseenter="swapImg(${p.id}, 1)" onmouseleave="swapImg(${p.id}, 0)">
+          <div class="photo aspect-[4/5] mb-3.5">
+            <img id="grid-img-${p.id}" alt="${p.name}" />
+          </div>
+          <div class="flex items-baseline justify-between gap-4">
+            <h3 class="font-display text-lg text-sand group-hover:text-taba transition-colors">${p.name}</h3>
+            <span class="text-xs text-muted">${priceText(p.price)}</span>
+          </div>
+        </article>
+      `).join('');
+
+      list.forEach(p => {
+        const img = document.getElementById(`grid-img-${p.id}`);
+        loadPhoto(img, p.photos[0].path, p.photos[0].sheet, p.photos[0].col, p.photos[0].row, p.photos[0].crop);
+      });
+    }
+
+    function swapImg(id, idx) {
+      const p = PRODUCTS.find(x => x.id === id);
+      if (!p || !p.photos[idx]) return;
+      const img = document.getElementById(`grid-img-${id}`);
+      const ph = p.photos[idx];
+      loadPhoto(img, ph.path, ph.sheet, ph.col, ph.row, ph.crop);
+    }
+
+    let modalProduct = null;
+
+    function openModal(id) {
+      const p = PRODUCTS.find(x => x.id === id);
+      if (!p) return;
+      modalProduct = p;
+
+      document.getElementById('modal-name').textContent = p.name;
+      document.getElementById('modal-price').textContent = priceText(p.price);
+      document.getElementById('modal-desc').textContent = p.desc;
+
+      setModalPhoto(0);
+
+      const thumbs = document.getElementById('modal-thumbs');
+      thumbs.innerHTML = p.photos.map((ph, i) => `
+        <button onclick="setModalPhoto(${i})" class="photo aspect-square border border-line hover:border-sand">
+          <img id="m-thumb-${i}" alt="" />
+        </button>
+      `).join('');
+
+      p.photos.forEach((ph, i) => {
+        loadPhoto(document.getElementById(`m-thumb-${i}`), ph.path, ph.sheet, ph.col, ph.row, ph.crop);
+      });
+
+      renderModalLeathers();
+
+      document.getElementById('modal-add').onclick = () => {
+        cart.push({ product: p, leather: { ...activeLeather } });
+        document.getElementById('cart-count').textContent = cart.length;
+        closeModal();
+        toggleCart(true);
+      };
+
+      updateWaLink();
+      document.getElementById('modal').classList.remove('hidden');
+    }
+
+    function setModalPhoto(idx) {
+      if (!modalProduct || !modalProduct.photos[idx]) return;
+      const ph = modalProduct.photos[idx];
+      loadPhoto(document.getElementById('modal-img'), ph.path, ph.sheet, ph.col, ph.row, ph.crop);
+    }
+
+    function renderModalLeathers() {
+      document.getElementById('modal-leathers').innerHTML = LEATHERS.map(l => {
+        const active = l.id === activeLeather.id;
+        return `
+          <button onclick="selectModalLeather('${l.id}')" class="w-full flex items-center gap-3 px-3 py-2 border text-xs ${active ? 'border-sand text-sand bg-bg' : 'border-line text-muted hover:text-sand'}">
+            <span class="w-3 h-3 rounded-full" style="background-color:${l.color}"></span>
+            <span>${l.name}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectModalLeather(id) {
+      selectLeather(id);
+      renderModalLeathers();
+      updateWaLink();
+    }
+
+    function updateWaLink() {
+      if (!modalProduct) return;
+      const msg = encodeURIComponent(`Merhaba Amaurot, ${modalProduct.name} (${activeLeather.name}) sipariş etmek istiyorum.`);
+      document.getElementById('modal-wa').href = `https://wa.me/905525676660?text=${msg}`;
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden');
+    }
+
+    function toggleCart(open) {
+      const el = document.getElementById('cart-drawer');
+      if (open) { renderCart(); el.classList.remove('hidden'); }
+      else { el.classList.add('hidden'); }
+    }
+
+    function removeCart(i) {
+      cart.splice(i, 1);
+      document.getElementById('cart-count').textContent = cart.length;
+      renderCart();
+    }
+
+    function renderCart() {
+      const box = document.getElementById('cart-items');
+      const tot = document.getElementById('cart-total');
+      if (!cart.length) {
+        box.innerHTML = `<p class="text-xs text-muted">Sepetiniz boş.</p>`;
+        tot.textContent = '0 ₺';
+        return;
+      }
+      let sum = 0;
+      box.innerHTML = cart.map((item, i) => {
+        if (item.product.price) sum += item.product.price;
+        return `
+          <div class="flex items-start justify-between gap-4 pb-3 border-b border-line text-xs">
+            <div>
+              <p class="text-sand font-medium">${item.product.name}</p>
+              <p class="text-muted mt-0.5">${item.leather.name} · ${priceText(item.product.price)}</p>
+            </div>
+            <button onclick="removeCart(${i})" class="text-muted hover:text-sand">Sil</button>
+          </div>
+        `;
+      }).join('');
+      tot.textContent = sum ? sum.toLocaleString('tr-TR') + ' ₺' : 'Özel Üretim';
+    }
+
+    function sendWhatsApp() {
+      if (!cart.length) return;
+      const lines = cart.map((item, i) => `${i + 1}. ${item.product.name} (${item.leather.name})`);
+      const text = `Merhaba Amaurot,\n\nSipariş listem:\n${lines.join('\n')}`;
+      window.open(`https://wa.me/905525676660?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initStatic();
+      renderLeathers();
+      renderGrid();
+    });
+  </script>
+</body>
+</html>
